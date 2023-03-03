@@ -3,13 +3,14 @@
 //Base
 @import './base/_base',
         './base/_typography';
+        
+//Utils
+@import './utils/_colors';
 
 //Layouts
 @import './layouts/_header';
 
 //Components
 @import './components/_app';
-
-
 
 //Pages

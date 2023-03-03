@@ -5,7 +5,7 @@
         &__list {
             display: flex;
             align-items: center;
-            gap: 0 20px;
+            gap: 0 40px;
         }
         
         &__logo {
@@ -13,7 +13,35 @@
         }
 
         &__item {
+            &:first-child{
+                margin-right: auto;
+                
+                .main-nav__link {
+                    display: inline-block;
+                }
+            }
 
+            &:last-child{
+                font-weight: 700;
+                
+                .main-nav__link {
+                    color: $primary;
+                }
+            }
+        }
+
+        &__link {
+            color: black;
+            transition: all ease-in-out 0.1s;
+
+            &-active {
+                color: $primary;
+            }
+
+            &:hover {
+                font-weight: 700;
+                color: $primary;
+            }
         }
     }
 }

@@ -4,23 +4,23 @@ export default function Header() {
         <header class="main-header">
             <nav className="main-nav">
                 <ul className="main-nav__list">
-                    <li>                
-                        <a href="coucou" className="main-nav__item">
+                    <li className="main-nav__item">
+                        <a href="coucou" className="main-nav__link">
                             <img src="./images/logo/Reservia@3x.png" className="main-nav__logo" alt="logo" />
                         </a>
                     </li>
-                    <li>                
-                        <a href="coucou" className="main-nav__item">
+                    <li className="main-nav__item">
+                        <a href="coucou" className="main-nav__link main-nav__link-active">
                             Hébergements
                         </a>
                     </li>
-                    <li>                
-                        <a href="coucou" className="main-nav__item">
+                    <li className="main-nav__item">
+                        <a href="coucou" className="main-nav__link">
                             Activités
                         </a>
                     </li>
-                    <li>                
-                        <a href="coucou" className="main-nav__item">
+                    <li className="main-nav__item">
+                        <a href="coucou" className="main-nav__link">
                             S'inscrire
                         </a>
                     </li>
