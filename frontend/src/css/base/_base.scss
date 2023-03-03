@@ -347,3 +347,23 @@
   [hidden] {
     display: none;
   }
+
+  /**
+  * Remove a style
+  */
+  a {
+    text-decoration: none;
+  }
+
+  /**
+  * Remove list style
+  */
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
