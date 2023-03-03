@@ -4,7 +4,12 @@
 @import './base/_base',
         './base/_typography';
 
+//Layouts
+@import './layouts/_header';
+
 //Components
+@import './components/_app';
+
 
 
 //Pages
