@@ -1,11 +1,17 @@
+import Icon from "../components/Icon";
+
 export default function SearchBlock() {
 
-    return(
-        <section>
+    return (
+        <section className="search-block">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <div>
-                search bar
+            <div className="search-bar">
+                <span className="search-bar__icon">
+                    <Icon name="pin"/>
+                </span>
+                <input type="text" className="search-bar__input"/>
+                <button className="search-bar__button">Rechercher</button>
             </div>
             <div>
                 filters

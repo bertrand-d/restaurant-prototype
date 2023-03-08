@@ -2,9 +2,9 @@ import SearchBlock from "../components/SearchBlock"
 
 export default function Homepage() {
 
-    return(
+    return (
         <>
-        <SearchBlock></SearchBlock>
+            <SearchBlock></SearchBlock>
             <p>coucou</p>
         </>
     );
