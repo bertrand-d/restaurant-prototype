@@ -1,5 +1,6 @@
-import Homepage from './pages/Homepage'
 import Header from './layouts/Header'
+import Homepage from './pages/Homepage'
+
 
 function App() {
   return (

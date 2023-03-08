@@ -1,7 +1,7 @@
 export default function Header() {
 
     return (
-        <header class="main-header">
+        <header className="main-header">
             <nav className="main-nav">
                 <ul className="main-nav__list">
                     <li className="main-nav__item">
