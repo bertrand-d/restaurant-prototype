@@ -7,7 +7,7 @@ export default function SearchBlock() {
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <div className="search-bar">
-                <span className="search-bar__icon">
+                <span className="search-bar__icon-container">
                     <Icon name="pin"/>
                 </span>
                 <input type="text" className="search-bar__input"/>
