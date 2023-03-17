@@ -5,7 +5,6 @@ export default function Homepage() {
     return (
         <>
             <SearchBlock></SearchBlock>
-            <p>coucou</p>
         </>
     );
 }

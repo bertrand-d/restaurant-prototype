@@ -42,8 +42,11 @@ export default function SearchBlock() {
                     Animaux autorisés
                 </li>
             </ul>
-            <div>
-                number of hostels in the city
+            <div className="search-information">
+                <div className="search-information__icon-container">
+                    <Icon name="information" />
+                </div>
+                Plus de 500 logements disponibles dans cette ville
             </div>
         </section>
     )
