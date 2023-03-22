@@ -1,6 +1,7 @@
 import SearchBlock from "../components/SearchBlock"
 import CardDetailedTop from "../components/CardDetailedTop"
 import React, { useState, useEffect } from 'react'
+import { HOST } from "../utils/constants"
 
 export default function Homepage() {
 
@@ -8,10 +9,12 @@ export default function Homepage() {
   const [hostels, setHostels] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:1337/api/hotels?populate=*")
+    console.log("host", HOST)
+    fetch(HOST + "/api/hotels?populate=*")
       .then(res => res.json())
       .then(
         (result) => {
+          console.log('res', result)
            setHostels(result.data)
         },
         // Note: it's important to handle errors here
@@ -30,7 +33,7 @@ export default function Homepage() {
   console.log(hostels)
 
     return (
-        <>
+        <main className="homepage">
             <SearchBlock/>
             <section className="accomodation-result">
               <div className="accomodation">
@@ -46,6 +49,6 @@ export default function Homepage() {
 
               </div>
             </section>
-        </>
+        </main>
     );
 }

@@ -1,10 +1,11 @@
+import { HOST } from "../utils/constants"
 import Icon from "./Icon"
 
 export default function CardDetailedTop(props) {
 
     const {name, price, picture} = props.hostel.attributes
 
-    const url = "http://localhost:1337" + picture.data.attributes.url
+    const url = HOST + picture.data.attributes.url
 
     return (
         <a className="card-detailed-top" href="#">
