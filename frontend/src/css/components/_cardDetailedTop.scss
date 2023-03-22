@@ -38,5 +38,13 @@
     &__notation {
         display: flex;
         gap: 0 3px;
+
+        .icon {
+            fill: $primary;
+
+            &.inactive {
+                fill: $quaternary;
+            }
+        }
     }
 }

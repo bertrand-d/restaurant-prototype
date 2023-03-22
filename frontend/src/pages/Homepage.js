@@ -8,12 +8,10 @@ export default function Homepage() {
   const [hostels, setHostels] = useState([])
 
   useEffect(() => {
-    console.log("host", HOST)
     fetch(HOST + "/api/hotels?populate=*")
       .then(res => res.json())
       .then(
         (result) => {
-          console.log('res', result)
           setHostels(result.data)
         },
         // Note: it's important to handle errors here
@@ -29,8 +27,6 @@ export default function Homepage() {
     // similar to componentDidMount()
     [])
 
-  console.log(hostels)
-
   return (
     <main className="homepage">
       <SearchBlock />
@@ -45,7 +41,6 @@ export default function Homepage() {
         </div>
         <div className="popular-accomodation">
           <h2>Les plus populaires</h2>
-
         </div>
       </section>
     </main>

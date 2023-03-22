@@ -3,7 +3,21 @@ import Icon from "./Icon"
 
 export default function CardDetailedTop(props) {
 
-    const {name, price, picture} = props.hostel.attributes
+    const { name, price, picture, notation } = props.hostel.attributes
+    let stars = []
+
+    function generateStars(number) {
+        const max = 5 - number
+        for (let i = 0; i < number; i++) {
+            stars.push(<Icon name="star" />)
+        }
+
+        for(let j = 0; j < max ; j++) {
+            stars.push(<Icon name="star" style="inactive" />)
+        }
+    }
+
+    generateStars(notation)
 
     const url = HOST + picture.data.attributes.url
 
@@ -19,8 +33,7 @@ export default function CardDetailedTop(props) {
                     <span className="card-detailed-top__description__currency"> €</span>
                 </span>
                 <div className="card-detailed-top__notation">
-                    <Icon name="dog" />
-                    <Icon name="dog" />
+                    {stars}
                 </div>
             </div>
         </a>
