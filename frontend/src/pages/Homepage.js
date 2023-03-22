@@ -5,7 +5,6 @@ import { HOST } from "../utils/constants"
 
 export default function Homepage() {
 
-
   const [hostels, setHostels] = useState([])
 
   useEffect(() => {
@@ -15,7 +14,7 @@ export default function Homepage() {
       .then(
         (result) => {
           console.log('res', result)
-           setHostels(result.data)
+          setHostels(result.data)
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
@@ -24,31 +23,31 @@ export default function Homepage() {
 
         }
       )
-  }, 
+  },
     // Note: the empty deps array [] means
-  // this useEffect will run once
-  // similar to componentDidMount()
-  [])
+    // this useEffect will run once
+    // similar to componentDidMount()
+    [])
 
   console.log(hostels)
 
-    return (
-        <main className="homepage">
-            <SearchBlock/>
-            <section className="accomodation-result">
-              <div className="accomodation">
-                <h2>Hébergements à Marseille</h2>
-                <div className="accomodation__container"></div>
-                {
-                  React.Children.toArray(hostels.map((hostel) => <CardDetailedTop hostel= {hostel}/> ))
-                }
+  return (
+    <main className="homepage">
+      <SearchBlock />
+      <section className="accomodation-result">
+        <div className="accomodation">
+          <h2>Hébergements à Marseille</h2>
+          <div className="accomodation__container">
+            {
+              React.Children.toArray(hostels.map((hostel) => <CardDetailedTop hostel={hostel} />))
+            }
+          </div>
+        </div>
+        <div className="popular-accomodation">
+          <h2>Les plus populaires</h2>
 
-              </div>
-              <div className="popular-accomodation">
-                <h2>Les plus populaires</h2>
-
-              </div>
-            </section>
-        </main>
-    );
+        </div>
+      </section>
+    </main>
+  )
 }
