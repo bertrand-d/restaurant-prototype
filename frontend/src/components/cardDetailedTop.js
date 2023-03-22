@@ -7,12 +7,13 @@ export default function CardDetailedTop(props) {
     let stars = []
 
     function generateStars(number) {
-        const max = 5 - number
+        const max = 5
+
         for (let i = 0; i < number; i++) {
             stars.push(<Icon name="star" />)
         }
 
-        for(let j = 0; j < max ; j++) {
+        for(let j = 0; j < max - number ; j++) {
             stars.push(<Icon name="star" style="inactive" />)
         }
     }
