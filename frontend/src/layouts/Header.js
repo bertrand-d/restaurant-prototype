@@ -1,3 +1,4 @@
+import logo from "../images/logo/Reservia@3x.png"
 export default function Header() {
 
     return (
@@ -6,7 +7,7 @@ export default function Header() {
                 <ul className="main-nav__list">
                     <li className="main-nav__item">
                         <a href="coucou" className="main-nav__link">
-                            <img src="./images/logo/Reservia@3x.png" className="main-nav__logo" alt="logo" />
+                            <img src={logo} className="main-nav__logo" alt="logo" />
                         </a>
                     </li>
                     <li className="main-nav__item">
