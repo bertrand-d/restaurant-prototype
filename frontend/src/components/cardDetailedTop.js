@@ -9,12 +9,12 @@ export default function CardDetailedTop(props) {
     function generateStars(number) {
         const max = 5
 
-        for (let i = 0; i < number; i++) {
-            stars.push(<Icon name="star" />)
-        }
-
-        for(let j = 0; j < max - number ; j++) {
-            stars.push(<Icon name="star" style="inactive" />)
+        for (let i = 0; i < max; i++) {
+            if (i < number) {
+                stars.push(<Icon name="star" />)
+            } else {
+                stars.push(<Icon name="star" style="inactive" />)   
+            }
         }
     }
 
@@ -31,7 +31,7 @@ export default function CardDetailedTop(props) {
                 <span className="card-detailed-top__title">{name}</span>
                 <span className="card-detailed-top__description">
                     Nuit à partir de {price}
-                    <span className="card-detailed-top__description__currency"> €</span>
+                    <span className="card-detailed-top__description__currency">€</span>
                 </span>
                 <div className="card-detailed-top__notation">
                     {stars}
