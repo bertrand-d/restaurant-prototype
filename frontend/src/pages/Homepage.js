@@ -1,5 +1,6 @@
 import SearchBlock from "../components/SearchBlock"
 import CardDetailedTop from "../components/CardDetailedTop"
+import CardDetailedLeft from "../components/CardDetailedLeft"
 import React, { useState, useEffect } from 'react'
 import { HOST } from "../utils/constants"
 
@@ -27,6 +28,13 @@ export default function Homepage() {
     // similar to componentDidMount()
     [])
 
+  const cardLimit = 6
+  const [next, setNext] = useState(cardLimit)
+
+  function handleMoreCards() {
+    setNext(next + cardLimit)
+  }
+
   return (
     <main className="homepage">
       <SearchBlock />
@@ -35,12 +43,18 @@ export default function Homepage() {
           <h2>Hébergements à Marseille</h2>
           <div className="accomodation__container">
             {
-              React.Children.toArray(hostels.map((hostel) => <CardDetailedTop hostel={hostel} />))
+              React.Children.toArray(hostels.slice(0, next).map((hostel) => <CardDetailedTop hostel={hostel} />))
             }
+            <button onClick={handleMoreCards}> Afficher plus </button>
           </div>
         </div>
         <div className="popular-accomodation">
           <h2>Les plus populaires</h2>
+          <div className="popular-accomodation__container">
+            {
+              React.Children.toArray(hostels.slice(0, 3).map((hostel) => <CardDetailedLeft hostel={hostel} />))
+            }
+          </div>
         </div>
       </section>
     </main>

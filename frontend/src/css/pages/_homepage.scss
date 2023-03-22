@@ -1,20 +1,35 @@
 .homepage {
-
     .accomodation-result {
         display: flex;
         justify-content: space-between;
+        gap: 0 40px;
+        margin-top: 40px;
     }
 
     .accomodation {
         background: $quaternary;
         border-radius: 20px;
-        width: 80%;
+        width: 70%;
         padding: 30px;
 
         &__container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            gap: 30px;
+        }
+    }
+
+    .popular-accomodation {
+        background: $quaternary;
+        border-radius: 20px;
+        width: 30%;
+        padding: 30px;
+        height: fit-content;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
             gap: 30px;
         }
     }

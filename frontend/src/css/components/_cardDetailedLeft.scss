@@ -1,0 +1,51 @@
+.card-detailed-left {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    height: 150px;
+
+    &__left-container {
+       overflow: hidden;
+       border-radius: 20px 0 0 20px;
+       height: 100%;
+       width: 120px;
+    }
+
+    &__right-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    &__title {
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    &__description {
+        font-size: 14px;
+        margin-bottom: 8px;
+
+        &__currency {
+            font-weight: 700;
+        }
+    }
+
+    &__notation {
+        display: flex;
+        margin-top: auto;
+        gap: 0 3px;
+
+        .icon {
+            fill: $primary;
+            width: 15px;
+
+            &.inactive {
+                fill: $quaternary;
+            }
+        }
+    }
+}
