@@ -23,17 +23,17 @@ export default function CardDetailedLeft(props) {
     const url = HOST + picture.data.attributes.url
 
     return (
-        <a className="card-detailed-left" href="#">
-            <div className="card-detailed-left__left-container">
+        <a className="card-detailed card-detailed--left" href="#">
+            <div className="card-detailed__picture-container card-detailed__picture-container--left">
                 <img src={url} alt="hotel" />
             </div>
-            <div className="card-detailed-left__right-container">
-                <span className="card-detailed-left__title">{name}</span>
-                <span className="card-detailed-left__description">
+            <div className="card-detailed__infos-container">
+                <span className="card-detailed__title">{name}</span>
+                <span className="card-detailed__description">
                     Nuit à partir de {price}
-                    <span className="card-detailed-left__description__currency"> €</span>
+                    <span className="card-detailed__description__currency"> €</span>
                 </span>
-                <div className="card-detailed-left__notation">
+                <div className="card-detailed__notation card-detailed__notation--margin-top">
                     {stars}
                 </div>
             </div>
