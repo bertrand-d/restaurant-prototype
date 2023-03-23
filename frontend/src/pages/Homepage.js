@@ -30,9 +30,22 @@ export default function Homepage() {
 
   const cardLimit = 6
   const [next, setNext] = useState(cardLimit)
+  const [buttonValue, setButtonValue] = useState('Afficher plus')
+  const [isArrayOver, setIsArrayOver] = useState(false)
 
   function handleMoreCards() {
-    setNext(next + cardLimit)
+
+    if((next + cardLimit) > hostels.length) {
+      setButtonValue('Afficher moins')
+      setIsArrayOver(true)
+    }
+    if(isArrayOver){
+      setNext(next - cardLimit)
+    }
+    else {
+      
+      setNext(next + cardLimit)
+    }
   }
 
   return (
@@ -45,7 +58,7 @@ export default function Homepage() {
             {
               React.Children.toArray(hostels.slice(0, next).map((hostel) => <CardDetailedTop hostel={hostel} />))
             }
-            <button onClick={handleMoreCards} className="see-more"> Afficher plus </button>
+            <button onClick={handleMoreCards} className="see-more"> {buttonValue} </button>
           </div>
         </div>
         <div className="popular-accomodation">
