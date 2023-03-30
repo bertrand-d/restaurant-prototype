@@ -10,11 +10,11 @@ export default function CardDetailedLeft(props) {
         const max = 5
 
         for (let i = 0; i < number; i++) {
-            stars.push(<Icon name="star" />)
+            stars.push(<Icon name="star" key={"stars " + i} />)
         }
 
         for(let j = 0; j < max - number ; j++) {
-            stars.push(<Icon name="star" style="inactive" />)
+            stars.push(<Icon name="star" style="inactive" key={"inactive stars " + j} />)
         }
     }
 

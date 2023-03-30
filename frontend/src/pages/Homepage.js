@@ -34,16 +34,19 @@ export default function Homepage() {
   const [isArrayOver, setIsArrayOver] = useState(false)
 
   function handleMoreCards() {
-
     if((next + cardLimit) > hostels.length) {
       setButtonValue('Afficher moins')
       setIsArrayOver(true)
     }
     if(isArrayOver){
       setNext(next - cardLimit)
+      
+      if(next === 12) {
+        setIsArrayOver(false)
+        setButtonValue('Afficher plus')
+      }
     }
     else {
-      
       setNext(next + cardLimit)
     }
   }

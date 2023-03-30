@@ -11,9 +11,9 @@ export default function CardDetailedTop(props) {
 
         for (let i = 0; i < max; i++) {
             if (i < number) {
-                stars.push(<Icon name="star" />)
+                stars.push(<Icon name="star" key={i} />)
             } else {
-                stars.push(<Icon name="star" style="inactive" />)   
+                stars.push(<Icon name="star" style="inactive" key={i} />)   
             }
         }
         return stars
