@@ -5,6 +5,12 @@
     background: #fff;
     width: 300px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.2s;
+
+    &:hover {
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+    }
+
 
     &__picture-container {
         height: 380px;
