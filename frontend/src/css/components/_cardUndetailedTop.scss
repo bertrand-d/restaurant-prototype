@@ -14,6 +14,10 @@
 
     &__picture-container {
         height: 380px;
+
+        @include breakpoint(md){
+            height: 200px;
+        }
     }
 
     &__infos-container {

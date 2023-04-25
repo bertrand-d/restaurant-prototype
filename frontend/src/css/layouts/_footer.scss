@@ -1,8 +1,14 @@
 .footer {
     background: $quaternary;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
+
+    @include breakpoint(sm){
+        margin: 0 -20px;
+        width: calc(100% + 40px);
+    }
 
     &__list {
         display: flex;

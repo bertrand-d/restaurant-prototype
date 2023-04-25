@@ -5,7 +5,8 @@
         './base/_typography';
         
 //Utils
-@import './utils/_colors';
+@import './utils/_breakpoints', 
+        './utils/_colors';
 
 //Layouts
 @import './layouts/_header',

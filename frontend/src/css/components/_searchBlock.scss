@@ -6,10 +6,14 @@
         border-radius: 20px;
         padding: 2px 20px;
         margin: 20px 0 30px 0;
-        max-width: 30%;
+        max-width: 380px;
         height: 50px;
         position: relative;
         overflow: hidden;
+
+        @include breakpoint(sm){
+            width: 100%;
+        }
 
         &__icon-container {
             display: flex;
@@ -40,11 +44,20 @@
 
     .search-filters {
         display: flex;
-        gap: 0 20px;
+        flex-wrap: wrap;
+        gap: 20px;
         align-items: center;
         font-weight: 700;
         font-size: 0.8rem;
         margin-bottom: 30px;
+
+        &__label {
+            font-size: 1.2em;
+
+            @include breakpoint(md){
+                width: 100%;
+            }
+        }
 
         &__item {
             position: relative;
@@ -57,6 +70,10 @@
             &:hover {
                 background: $tertiary;
                 border: solid 2px $tertiary;
+            }
+
+            @include breakpoint(sm){
+                width: 100%;
             }
 
             &__icon-container {
