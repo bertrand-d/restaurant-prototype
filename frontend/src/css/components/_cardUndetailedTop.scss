@@ -1,0 +1,18 @@
+.card-undetailed {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #fff;
+    width: 300px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+
+    &__picture-container {
+        height: 380px;
+
+    }
+
+    &__infos-container {
+        font-weight: 700;
+        padding: 20px;
+    }
+}
