@@ -1,4 +1,5 @@
 import Header from './layouts/Header'
+import Footer from './layouts/Footer';
 import Homepage from './pages/Homepage'
 
 
@@ -9,6 +10,7 @@ function App() {
       <main>
         <Homepage></Homepage>
       </main>
+      <Footer></Footer>
     </div>
   )
 }

@@ -8,7 +8,8 @@
 @import './utils/_colors';
 
 //Layouts
-@import './layouts/_header';
+@import './layouts/_header',
+        './layouts/_footer';
 
 //Components
 @import './components/_app',

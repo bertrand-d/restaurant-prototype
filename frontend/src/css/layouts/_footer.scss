@@ -1,0 +1,18 @@
+.footer {
+    background: $quaternary;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-grow: 1;
+
+        &-item-title {
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+    }
+}
