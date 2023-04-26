@@ -77,8 +77,8 @@ export default function Homepage() {
             {
               React.Children.toArray(hostels.slice(0, next).map((hostel) => <CardDetailedTop hostel={hostel} />))
             }
-            <button onClick={handleMoreCards} className="see-more"> {buttonValue} </button>
           </div>
+          <button onClick={handleMoreCards} className="see-more"> {buttonValue} </button>
         </div>
         <div className="popular-accomodation">
           <h2>Les plus populaires</h2>

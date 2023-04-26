@@ -20,13 +20,9 @@ export default function Header() {
                             Activités
                         </a>
                     </li>
-                    <li className="main-nav__item">
-                        <a href="coucou" className="main-nav__link">
-                            S'inscrire
-                        </a>
-                    </li>
                 </ul>
             </nav>
+            <span className="main-header__mobile-spacer"></span>
         </header>
     )
 }

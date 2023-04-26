@@ -1,0 +1,32 @@
+[33m5aca3ac[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m add responsive
+[33m23f590e[m add hover effect on cards
+[33ma157806[m add footer
+[33m07a296d[m card undetailed top finished
+[33m8142a46[m add activities
+[33m33d1172[m finish see more button comportment and add key to stars
+[33m41b5274[m card detailed optimise css
+[33m4de176e[m add see more button styles
+[33m0e09c02[m card detailed optimise css
+[33m0842beb[m optimise generate stars with bebou
+[33m1acce79[m add load more
+[33meb2e420[m card
+[33m8237831[m add notation function
+[33m6788bca[m add card
+[33m2771609[m add env
+[33m121821e[m fix react render warning'
+[33mf13b57f[m add hostel
+[33m5d7edbe[m add card detailed top
+[33ma9c432a[m searchblock finish
+[33m08efe45[m add filters
+[33m9d99def[m add search block
+[33m19eaea0[m add sprite and icons
+[33md478a9c[m header
+[33m32899df[m header on desktop finish
+[33m08445c4[m add wrapper on body
+[33me45745f[m add header
+[33m089daab[m[33m ([m[1;32mmain[m[33m)[m add elements for App.js
+[33mf712363[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m add sass
+[33m705cb60[m add design and env variables
+[33m6f52e77[m add react
+[33m0f83472[m first commit with strapi
+[33mfdaba4e[m Initial commit
